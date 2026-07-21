@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Illustrasjon av en kebabrull">
+  <defs>
+    <radialGradient id="bg" cx="68%" cy="25%" r="90%">
+      <stop offset="0" stop-color="#63321f"/>
+      <stop offset=".48" stop-color="#2e1c14"/>
+      <stop offset="1" stop-color="#120e0b"/>
+    </radialGradient>
+    <linearGradient id="bread" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f2c879"/>
+      <stop offset=".52" stop-color="#d99545"/>
+      <stop offset="1" stop-color="#a8612f"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff2cd"/>
+      <stop offset="1" stop-color="#cbb994"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="35" stdDeviation="28" flood-color="#000" flood-opacity=".58"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .075"/></feComponentTransfer>
+    </filter>
+    <clipPath id="mouth"><ellipse cx="0" cy="-335" rx="236" ry="105"/></clipPath>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <circle cx="720" cy="210" r="190" fill="#c9ff49" opacity=".045"/>
+  <circle cx="125" cy="935" r="240" fill="#ff5a24" opacity=".065"/>
+  <g transform="translate(470 625) rotate(-14)" filter="url(#shadow)">
+    <ellipse cx="0" cy="345" rx="285" ry="96" fill="#050403" opacity=".5"/>
+    <path d="M-240-315 C-225-210-194 258-123 420 C-85 505 81 505 125 420 C196 265 227-205 241-315 Z" fill="url(#bread)"/>
+    <path d="M-221 72 C-172 128-87 164 0 164 C91 164 168 128 219 73 L172 390 C147 493-142 493-172 390 Z" fill="url(#paper)"/>
+    <path d="M-176 122 C-83 196 88 196 178 122" fill="none" stroke="#ad9b78" stroke-width="11" opacity=".55"/>
+    <path d="M-147 170 L151 410 M-187 230 L89 464 M-44 178 L176 350" stroke="#b9a783" stroke-width="7" opacity=".28"/>
+    <ellipse cx="0" cy="-315" rx="241" ry="111" fill="#bd7438"/>
+    <g clip-path="url(#mouth)">
+      <rect x="-260" y="-455" width="520" height="255" fill="#47271c"/>
+      <path d="M-242-366 C-168-446-113-266-44-361 C20-451 78-257 141-363 C173-416 214-385 258-323 L258-207 L-258-207Z" fill="#4f8a38"/>
+      <path d="M-229-319 C-176-375-126-294-73-335 C-20-378 17-286 80-334 C138-379 193-304 240-336" fill="none" stroke="#84bc45" stroke-width="47" stroke-linecap="round"/>
+      <g fill="#7f3823" stroke="#b75a32" stroke-width="6">
+        <path d="M-204-385 l114 38 -36 82 -121-41z"/>
+        <path d="M-89-420 l118 29 -25 93 -123-32z"/>
+        <path d="M36-407 l126 45 -38 88 -120-45z"/>
+        <path d="M139-368 l110 40 -29 88 -119-43z"/>
+      </g>
+      <g fill="#d94a36"><circle cx="-145" cy="-292" r="35"/><circle cx="88" cy="-289" r="39"/><circle cx="191" cy="-310" r="31"/></g>
+      <g fill="#ae66a4"><path d="M-228-410 Q-135-335-66-407" fill="none" stroke="#ae66a4" stroke-width="18"/><path d="M8-427 Q86-338 178-416" fill="none" stroke="#ae66a4" stroke-width="17"/></g>
+      <g fill="none" stroke="#fff4d8" stroke-linecap="round"><path d="M-215-352 Q-102-433 12-345 T230-352" stroke-width="20"/><path d="M-175-300 Q-70-362 45-302 T205-301" stroke-width="12"/></g>
+    </g>
+    <ellipse cx="0" cy="-315" rx="241" ry="111" fill="none" stroke="#f2bf6f" stroke-width="17" opacity=".9"/>
+    <g opacity=".32" fill="#7d451f"><ellipse cx="-142" cy="-128" rx="34" ry="11" transform="rotate(16 -142 -128)"/><ellipse cx="87" cy="-72" rx="42" ry="12" transform="rotate(-22 87 -72)"/><ellipse cx="-79" cy="12" rx="28" ry="9" transform="rotate(-11 -79 12)"/></g>
+  </g>
+  <g fill="#fff6df" opacity=".78" font-family="Arial,sans-serif"><text x="62" y="96" font-size="23" font-weight="700" letter-spacing="5">RULL OSLO</text><text x="62" y="128" font-size="14" letter-spacing="2" opacity=".55">BILDE KOMMER FRA STEDET</text></g>
+  <rect width="900" height="1200" filter="url(#grain)" opacity=".48"/>
+</svg>

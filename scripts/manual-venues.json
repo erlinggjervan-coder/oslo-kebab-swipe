@@ -1,0 +1,14 @@
+[
+  {
+    "id": "637faa34b79fdd23ad51d2ce",
+    "name": "Kebab Kompaniet Stovner",
+    "address": "Stovner Senter 3",
+    "location": [10.924184, 59.96133],
+    "slug": "kebab-kompaniet-stovner",
+    "shortDescription": "En kebabopplevelse inspirert av skandinaviske ganer.",
+    "image": "https://imageproxy.wolt.com/assets/6732152145d01a14eccab9b0",
+    "rating": { "rating": 3, "score": 7.6, "volume": 100 },
+    "tags": ["kebab", "doner", "halal"],
+    "district": "Stovner"
+  }
+]
